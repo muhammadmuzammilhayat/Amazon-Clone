@@ -490,6 +490,9 @@ ul a{
 
 /* 1. Tablet & Small Laptops (under 1024px) */
 @media (max-width: 1024px) {
+    body{
+        background-color: white;
+    }
     .nav-search {
         width: 400px; /* Shrinking the search bar */
     }
@@ -503,6 +506,9 @@ ul a{
 
 /* 2. Mobile Landscape/Large Phones (under 768px) */
 @media (max-width: 768px) {
+    body{
+        background-color: white;
+    }
     #navbar {
         height: auto;
         flex-wrap: wrap;
@@ -533,17 +539,28 @@ ul a{
 
 /* 3. Small Mobile (under 480px) */
 @media (max-width: 480px) {
+    body{
+        background-color: white;
+    }
     .box {
         width: 95%; /* 1 box per row for readability */
     }
     .shop-section {
         margin-top: -50px; /* Bring content up closer to hero */
     }
+
+    .foot-panel2{
+        font-size: 0.8rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
     .foot-panel3 {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         height: auto;
-        gap: 15px;
-        padding: 20px 0;
+        gap: 1px;
+        padding: 20px 20px;
     }
     .foot-btn {
         margin-right: 0;
@@ -552,5 +569,8 @@ ul a{
     }
     .box-content h2 {
         width: auto;
+    }
+    .panel-all{
+        display: none;
     }
 }
